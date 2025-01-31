@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prarabdh Mishra - Explore Human Body, Computers, and Space</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        h1 {
+            color: purple;
+        }
+        .content {
+            padding: 20px;
+        }
+        .fact {
+            color: neon red;
+        }
+        .green {
+            color: green;
+        }
+        .purple {
+            color: purple;
+        }
+        #topics {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .topic-button {
+            background-color: purple;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            font-size: 1.2em;
+        }
+        .topic-button:hover {
+            background-color: darkviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Exploration of the Human Body, Computers, and Space</h1>
+    <div id="topics">
+        <button class="topic-button" onclick="loadContent('humanBody')">Human Body</button>
+        <button class="topic-button" onclick="loadContent('computer')">Computer</button>
+        <button class="topic-button" onclick="loadContent('space')">Space</button>
+    </div>
+
+    <div class="content" id="content"></div>
+
+    <script>
+        function loadContent(topic) {
+            const contentDiv = document.getElementById("content");
+
+            if (topic === 'humanBody') {
+                contentDiv.innerHTML = `
+                    <h2 class="purple">Human Body</h2>
+                    <h3 class="green">1. Integumentary System</h3>
+                    <p>The integumentary system includes the skin, hair, nails, and glands. It protects the body from external damage, regulates body temperature, and allows for sensory perception.</p>
+                    <p><span class="fact">Fact 1:</span> The skin is the largest organ in the body.</p>
+                    <p><span class="fact">Fact 2:</span> Hair helps with temperature regulation and protects the scalp from UV rays.</p>
+
+                    <h3 class="green">2. Skeletal System</h3>
+                    <p>The skeletal system is made up of bones, cartilage, and ligaments. It supports the body, protects vital organs, and enables movement. It also stores calcium and produces blood cells in the bone marrow.</p>
+                    <p><span class="fact">Fact 1:</span> The human skeleton is made up of 206 bones.</p>
+                    <p><span class="fact">Fact 2:</span> Bones are constantly being remodeled and replaced throughout a person’s life.</p>
+
+                    <h3 class="green">3. Muscular System</h3>
+                    <p>The muscular system consists of skeletal muscles, smooth muscles, and cardiac muscles. It enables movement, helps with posture, and produces heat for the body.</p>
+                    <p><span class="fact">Fact 1:</span> Skeletal muscles are attached to bones and help in voluntary movements.</p>
+                    <p><span class="fact">Fact 2:</span> Cardiac muscles are specialized muscles found in the heart and enable its rhythmic contraction.</p>
+
+                    <h3 class="green">4. Nervous System</h3>
+                    <p>The nervous system controls body functions and allows communication between the brain and other body parts. It includes the brain, spinal cord, and nerves.</p>
+                    <p><span class="fact">Fact 1:</span> The brain contains approximately 86 billion neurons.</p>
+                    <p><span class="fact">Fact 2:</span> Nerves transmit electrical impulses that help regulate all functions in the body.</p>
+
+                    <h3 class="green">5. Cardiovascular System</h3>
+                    <p>The cardiovascular system is composed of the heart and blood vessels. It transports oxygen, nutrients, and hormones throughout the body and helps remove waste products.</p>
+                    <p><span class="fact">Fact 1:</span> The heart beats around 100,000 times per day, pumping approximately 7,570 liters of blood.</p>
+                    <p><span class="fact">Fact 2:</span> Blood travels through arteries, veins, and capillaries to transport oxygen and nutrients to cells.</p>
+
+                    <h3 class="green">6. Lymphatic System</h3>
+                    <p>The lymphatic system helps protect and maintain the fluid environment of the body. It includes the lymph nodes, spleen, and tonsils, which help fight infections and drain lymph fluid.</p>
+                    <p><span class="fact">Fact 1:</span> The lymphatic system plays a vital role in the immune system by filtering harmful substances.</p>
+                    <p><span class="fact">Fact 2:</span> Lymph nodes act as filters, trapping bacteria and viruses.</p>
+
+                    <h3 class="green">7. Respiratory System</h3>
+                    <p>The respiratory system allows for the exchange of gases, including oxygen and carbon dioxide, between the body and the environment. It includes the lungs, trachea, and diaphragm.</p>
+                    <p><span class="fact">Fact 1:</span> Humans breathe about 16-20 times per minute on average.</p>
+                    <p><span class="fact">Fact 2:</span> Oxygen is carried in the blood by red blood cells, which deliver it to tissues throughout the body.</p>
+
+                    <h3 class="green">8. Digestive System</h3>
+                    <p>The digestive system breaks down food into nutrients that the body can absorb. It includes the mouth, esophagus, stomach, and intestines.</p>
+                    <p><span class="fact">Fact 1:</span> The stomach secretes acid and enzymes to help break down food.</p>
+                    <p><span class="fact">Fact 2:</span> Nutrients from digested food are absorbed into the bloodstream in the small intestine.</p>
+
+                    <h3 class="green">9. Urinary System</h3>
+                    <p>The urinary system includes the kidneys, ureters, bladder, and urethra. It removes waste products from the blood and regulates fluid and electrolyte balance.</p>
+                    <p><span class="fact">Fact 1:</span> The kidneys filter about 50 gallons of blood every day to produce urine.</p>
+                    <p><span class="fact">Fact 2:</span> Urine is stored in the bladder until it is expelled through the urethra.</p>
+
+                    <h3 class="green">10. Endocrine System</h3>
+                    <p>The endocrine system regulates various functions through hormones produced by glands. These hormones control metabolism, growth, mood, and reproductive functions. Major glands include the thyroid, adrenal glands, and pancreas.</p>
+                    <p><span class="fact">Fact 1:</span> The thyroid gland produces hormones that regulate metabolism and energy use in the body.</p>
+                    <p><span class="fact">Fact 2:</span> The pancreas produces insulin and glucagon, which help regulate blood sugar levels.</p>
+
+                    <h3 class="green">11. Reproductive System</h3>
+                    <p>The reproductive system enables reproduction, ensuring the continuation of the species. It includes organs like the ovaries, testes, uterus, and prostate. In females, the reproductive system supports pregnancy, while in males, it produces sperm.</p>
+                    <p><span class="fact">Fact 1:</span> The ovaries release eggs and produce hormones like estrogen and progesterone.</p>
+                    <p><span class="fact">Fact 2:</span> Sperm produced by the testes is essential for fertilizing an egg during reproduction.</p>
+
+                    <h3 class="green">Key Organs and Their Functions</h3>
+                    <p>The brain, heart, lungs, kidneys, liver, gallbladder, pancreas, and stomach are key organs in the body, each performing critical functions to ensure survival.</p>
+                    <ul>
+                        <li><span class="fact">Brain:</span> Controls thoughts, memory, emotion, touch, motor skills, vision, breathing, and every process that regulates our body.</li>
+                        <li><span class="fact">Heart:</span> Pumps blood throughout the body, supplying oxygen and nutrients while removing carbon dioxide and other wastes.</li>
+                        <li><span class="fact">Lungs:</span> Facilitate the exchange of oxygen and carbon dioxide during breathing.</li>
+                        <li><span class="fact">Kidneys:</span> Filter blood to remove waste products and excess substances, maintaining a balance of fluids and electrolytes.</li>
+                        <li><span class="fact">Liver:</span> Processes nutrients from food and drinks and detoxifies harmful substances.</li>
+                        <li><span class="fact">Gallbladder:</span> Stores bile produced by the liver, aiding in the digestion of fats.</li>
+                        <li><span class="fact">Pancreas:</span> Produces digestive enzymes and hormones such as insulin that regulate blood sugar levels.</li>
+                        <li><span class="fact">Stomach:</span> Breaks down food through acidic digestion and enzyme action.</li>
+                    </ul>
+                `;
+            } else if (topic === 'computer') {
+                contentDiv.innerHTML = `
+                    <h2 class="purple">The Fascinating World of Computers</h2>
+                    <h3 class="green">1. Central Processing Unit (CPU)</h3>
+                    <p>The CPU is the brain of the computer, responsible for executing instructions and managing processes. It processes information by performing basic arithmetic, logical, and control operations.</p>
+                    <p><span class="fact">Fact 1:</span> The CPU's speed is measured in GHz, and modern processors can execute billions of instructions per second.</p>
+                    <p><span class="fact">Fact 2:</span> CPUs are often multi-core, meaning they contain several processors that can work in parallel, greatly increasing performance.</p>
+
+                    <h3 class="green">2. Random Access Memory (RAM)</h3>
+                    <p>RAM is a temporary storage area that the CPU uses to quickly access data while a computer is running. The more RAM a system has, the more data it can handle at once, resulting in faster performance and smoother multitasking.</p>
+                    <p><span class="fact">Fact 1:</span> RAM is volatile, meaning it loses all data when the computer is turned off.</p>
+                    <p><span class="fact">Fact 2:</span> Computers with more RAM can run more applications simultaneously without slowing down.</p>
+
+                    <h3 class="green">3. Motherboard</h3>
+                    <p>The motherboard is the main circuit board of the computer that houses essential components like the CPU, RAM, and storage devices. It allows communication between the different parts of the computer through buses and connectors.</p>
+                    <p><span class="fact">Fact 1:</span> Motherboards come in various sizes (ATX, MicroATX), which determine how many components can be installed.</p>
+                    <p><span class="fact">Fact 2:</span> The motherboard houses various slots for adding expansion cards such as graphics cards or network cards.</p>
+
+                    <h3 class="green">4. Graphics Card</h3>
+                    <p>The graphics card (GPU) is responsible for rendering images and video, including tasks such as 3D rendering and gaming. The GPU works in conjunction with the CPU to create high-quality visual content.</p>
+                    <p><span class="fact">Fact 1:</span> Modern GPUs are capable of parallel processing, which speeds up computational tasks, especially in gaming and artificial intelligence.</p>
+                    <p><span class="fact">Fact 2:</span> Some GPUs are equipped with thousands of cores, allowing them to perform complex tasks much faster than a CPU in certain scenarios.</p>
+
+                    <h3 class="green">5. Sound Card</h3>
+                    <p>The sound card processes audio signals, allowing computers to output sound through speakers and microphones. It converts digital signals into analog signals that we can hear.</p>
+                    <p><span class="fact">Fact 1:</span> The sound card plays a crucial role in digital-to-analog conversion, ensuring the best possible sound quality.</p>
+                    <p><span class="fact">Fact 2:</span> Modern sound cards support high-definition audio formats like 3D audio and surround sound for a richer experience.</p>
+                `;
+            } else if (topic === 'space') {
+                contentDiv.innerHTML = `
+                    <h2 class="purple">The Wonders of Space</h2>
+
+                    <h3 class="green">1. The Sun</h3>
+                    <p>The Sun is the center of our solar system and provides the heat and light necessary for life on Earth. It is a star composed of hydrogen and helium undergoing nuclear fusion at its core, producing energy.</p>
+                    <p><span class="fact">Fact 1:</span> The Sun accounts for 99.86% of the total mass in the solar system.</p>
+                    <p><span class="fact">Fact 2:</span> The Sun’s core temperature reaches over 15 million degrees Celsius.</p>
+
+                    <h3 class="green">2. Sirius A and B</h3>
+                    <p>Sirius A is the brightest star in the night sky, and it has a companion star, Sirius B, which is a white dwarf. Together, they form a binary star system.</p>
+                    <p><span class="fact">Fact 1:</span> Sirius A is about 25 times more luminous than the Sun and has a mass 2.5 times that of our star.</p>
+                    <p><span class="fact">Fact 2:</span> Sirius B was once a main-sequence star, but after exhausting its nuclear fuel, it collapsed into a white dwarf.</p>
+
+                    <h3 class="green">3. The Crab Nebula</h3>
+                    <p>The Crab Nebula is the remnant of a supernova explosion observed in 1054. It is a highly energetic region filled with gas and dust, and it's expanding rapidly into space.</p>
+                    <p><span class="fact">Fact 1:</span> The Crab Nebula contains a neutron star, the dense core left behind after a supernova explosion.</p>
+                    <p><span class="fact">Fact 2:</span> It emits radiation across the electromagnetic spectrum, from radio waves to gamma rays.</p>
+
+                    <h3 class="green">4. A Black Hole</h3>
+                    <p>A black hole is a region in space where gravity is so strong that nothing, not even light, can escape. Black holes are formed from the collapse of massive stars at the end of their life cycle.</p>
+                    <p><span class="fact">Fact 1:</span> Black holes can range in size from stellar mass black holes to supermassive black holes found at the centers of galaxies.</p>
+                    <p><span class="fact">Fact 2:</span> The event horizon is the boundary around a black hole, beyond which nothing can escape its gravitational pull.</p>
+
+                    <h3 class="green">5. Vela Pulsar</h3>
+                    <p>The Vela Pulsar is a neutron star that emits regular pulses of electromagnetic radiation. It is the remnant of a massive star that exploded in a supernova.</p>
+                    <p><span class="fact">Fact 1:</span> Neutron stars like the Vela Pulsar are incredibly dense, with a mass greater than the Sun packed into a sphere just a few kilometers across.</p>
+                    <p><span class="fact">Fact 2:</span> The Vela Pulsar rotates about 10 times per second, emitting bursts of radiation with every rotation.</p>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>

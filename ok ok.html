@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prarabdh Mishra - Educational Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url('https://source.unsplash.com/1600x900/?nature,technology') no-repeat center center fixed;
+            background-size: cover;
+            color: blue;
+        }
+        .container {
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        h1, h2, h3, h4 {
+            color: darkred;
+        }
+        p {
+            font-size: 1.5em;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-top: 20px;
+        }
+        .menu {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .menu button {
+            padding: 15px;
+            margin: 10px;
+            font-size: 18px;
+            background-color: #808080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+        .menu button:hover {
+            background-color: #A9A9A9;
+            transform: scale(1.1);
+        }
+        .topic {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            max-width: 1000px;
+            margin: 30px auto;
+            color: white;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #606060;
+            color: white;
+        }
+        .header img {
+            width: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.postimg.cc/wvdM9rvH/bru.webp" alt="Profile Picture" class="profile-img">
+        <h1 style="color: white;">Welcome, I'm Prarabdh Mishra</h1>
+        <p style="color: white;">Passionate about technology, innovation, and creativity. Join me on my journey to explore and create something amazing.</p>
+    </div>
+
+    <div class="header">
+        <h1>Welcome to My Educational Website</h1>
+        <p>Explore the wonders of the human body, learn about computers, or journey through space.</p>
+    </div>
+
+    <div class="menu">
+        <button onclick="showContent('human-body')">Human Body</button>
+        <button onclick="showContent('computer')">Computer</button>
+        <button onclick="showContent('space')">Space</button>
+    </div>
+
+    <div class="topic" id="content">
+        <h2>Choose a Topic to Learn More</h2>
+        <p>Select a category from the menu above to explore detailed information about the human body, computers, or space.</p>
+    </div>
+
+    <script>
+        function showContent(topic) {
+            const contentDiv = document.getElementById('content');
+            if (topic === 'human-body') {
+                contentDiv.innerHTML = `
+                    <h2 style="color: purple;">Understanding the Human Body</h2>
+
+                    <h3 style="color: green;">1. Integumentary System</h3>
+                    <p>The integumentary system includes the skin, hair, nails, and glands. It serves as the body’s outer protection, regulates temperature, and enables sensation. The skin helps prevent dehydration and protects internal organs from external harm.</p>
+
+                    <h3 style="color: green;">2. Skeletal System</h3>
+                    <p>The skeletal system provides structural support to the body, protects internal organs, stores minerals, and produces blood cells in the bone marrow. It consists of 206 bones and several ligaments that provide movement and flexibility.</p>
+
+                    <h3 style="color: green;">3. Muscular System</h3>
+                    <p>The muscular system enables movement by contracting and relaxing. There are three types of muscles: skeletal muscles (voluntary control), smooth muscles (involuntary), and cardiac muscles (heart). This system works in coordination with the skeletal system to facilitate movement.</p>
+
+                    <h3 style="color: green;">4. Nervous System</h3>
+                    <p>The nervous system controls body activities through electrical signals transmitted by neurons. It includes the brain, spinal cord, and peripheral nerves. The nervous system helps in processing sensory input, decision making, and coordinating movements.</p>
+
+                    <h3 style="color: green;">5. Cardiovascular System</h3>
+                    <p>The cardiovascular system circulates blood, supplying oxygen and nutrients while removing carbon dioxide and waste. It consists of the heart and blood vessels (arteries, veins, and capillaries). The heart pumps blood through the circulatory system, ensuring efficient nutrient transport.</p>
+
+                    <h3 style="color: green;">6. Lymphatic System</h3>
+                    <p>The lymphatic system helps protect and maintain fluid balance in the body. It filters out pathogens and houses lymph nodes, spleen, and tonsils that support immune function. It also plays a role in absorbing fatty acids and fats from the digestive system.</p>
+
+                    <h3 style="color: green;">7. Respiratory System</h3>
+                    <p>The respiratory system facilitates gas exchange in the lungs. It absorbs oxygen from the air and expels carbon dioxide from the blood. It includes the nose, trachea, bronchi, lungs, and diaphragm, all working together to ensure the body’s tissues are oxygenated.</p>
+
+                    <h3 style="color: green;">8. Digestive System</h3>
+                    <p>The digestive system breaks down food into smaller molecules that can be absorbed into the bloodstream. The process includes ingestion, digestion, absorption, and excretion. It consists of the mouth, stomach, intestines, liver, pancreas, and gallbladder.</p>
+
+                    <h3 style="color: green;">9. Urinary System</h3>
+                    <p>The urinary system filters waste from the blood, maintains fluid and electrolyte balance, and expels urine. It consists of the kidneys, ureters, bladder, and urethra. The kidneys filter blood to remove waste, while the bladder stores and expels urine.</p>
+
+                    <h3 style="color: green;">10. Endocrine System</h3>
+                    <p>The endocrine system regulates bodily functions using hormones. It includes glands like the thyroid, pituitary, adrenal glands, and pancreas. These hormones regulate metabolism, growth, reproduction, and mood.</p>
+
+                    <h3 style="color: green;">11. Reproductive System</h3>
+                    <p>The reproductive system produces offspring through the formation of sperm and eggs. It includes the male (testes, prostate, penis) and female (ovaries, uterus, vagina) reproductive organs. Hormones regulate this system during puberty and reproduction.</p>
+
+                    <h3 style="color: purple;">Key Organs and Their Functions</h3>
+                    <p><b style="color: green;">Brain:</b> The brain controls thoughts, memory, emotion, touch, motor skills, vision, breathing, temperature, and many more. It is the command center of the body.</p>
+                    <p><b style="color: green;">Heart:</b> The heart pumps blood throughout the body, supplying oxygen and nutrients to tissues and removing waste products.</p>
+                    <p><b style="color: green;">Lungs:</b> The lungs are responsible for gas exchange, bringing oxygen into the body and removing carbon dioxide from the blood.</p>
+                    <p><b style="color: green;">Kidneys:</b> The kidneys filter waste products from the blood, balance fluids and electrolytes, and produce urine.</p>
+                    <p><b style="color: green;">Liver:</b> The liver detoxifies harmful substances, produces bile, and stores glycogen for energy.</p>
+                    <p><b style="color: green;">Gallbladder:</b> The gallbladder stores bile produced by the liver, releasing it to aid in the digestion of fats.</p>
+                    <p><b style="color: green;">Pancreas:</b> The pancreas produces insulin and other enzymes that regulate blood sugar and aid in digestion.</p>
+                    <p><b style="color: green;">Stomach:</b> The stomach digests food by mixing it with digestive juices, breaking it down into nutrients.</p>
+                    <p><b style="color: green;">Bones:</b> Bones provide structural support and protection for vital organs, facilitate movement by serving as levers for muscles, and store essential minerals such as calcium and phosphorus. Bone marrow produces blood cells, crucial for oxygen transport and immune function.</p>
+
+                    <h3 style="color: purple;">Muscles</h3>
+                    <p>Muscles enable movement by contracting and relaxing in response to signals from the nervous system. They also help maintain posture and generate body heat. The human body has three types of muscles: skeletal, smooth, and cardiac.</p>
+                `;
+            }
+
+            if (topic === 'computer') {
+                contentDiv.innerHTML = `
+                    <h2 style="color: purple;">Understanding the Computer</h2>
+
+                    <h3 style="color: green;">1. Central Processing Unit (CPU)</h3>
+                    <p>The CPU is the brain of the computer, responsible for executing instructions and processing data. It performs arithmetic, logic, control, and input/output operations, enabling the computer to run applications and process information.</p>
+
+                    <h3 style="color: green;">2. Random Access Memory (RAM)</h3>
+                    <p>RAM is a type of volatile memory used to store data temporarily that is being actively used or processed by the CPU. It allows for fast access to data, improving overall system performance and multitasking capability.</p>
+
+                    <h3 style="color: green;">3. Motherboard</h3>
+                    <p>The motherboard is the main circuit board of a computer. It connects all hardware components, such as the CPU, RAM, storage devices, and peripheral devices, ensuring they communicate with each other.</p>
+
+                    <h3 style="color: green;">4. Graphics Card</h3>
+                    <p>The graphics card is responsible for rendering images, video, and animations. It has its own processor and memory, allowing it to handle graphically intensive tasks such as gaming, video editing, and 3D rendering.</p>
+
+                    <h3 style="color: green;">5. Sound Card</h3>
+                    <p>The sound card enables the computer to process audio signals, providing output to speakers and input from microphones. It converts digital data into audio signals for playback and vice versa.</p>
+
+                    <h3 style="color: green;">6. Computer Case</h3>
+                    <p>The computer case, or chassis, houses all of the internal components of the computer, providing physical protection and cooling. It comes in various sizes and forms, including desktop and tower models.</p>
+
+                    <h3 style="color: green;">7. Monitor</h3>
+                    <p>The monitor displays the graphical interface and output of a computer. It works by receiving signals from the graphics card and converting them into visible images using a screen technology like LED or LCD.</p>
+
+                    <h3 style="color: green;">8. Mouse and Keyboard</h3>
+                    <p>The mouse is an input device that allows users to interact with the computer's graphical interface. The keyboard enables text input and other commands, allowing for typing and control of applications.</p>
+
+                    <h3 style="color: purple;">Additional Computer Components</h3>
+                    <p><b style="color: green;">Storage Devices:</b> Storage devices like hard drives and solid-state drives (SSD) store data permanently. They allow users to store files, applications, and the operating system.</p>
+                    <p><b style="color: green;">Peripherals:</b> Peripherals like printers, external hard drives, webcams, and speakers enhance the functionality of the computer.</p>
+                `;
+            }
+
+            if (topic === 'space') {
+                contentDiv.innerHTML = `
+                    <h2 style="color: purple;">Exploring the Universe</h2>
+
+                    <h3 style="color: green;">1. The Sun</h3>
+                    <p>The Sun is the closest star to Earth and the primary source of light and energy for the solar system. It is a massive ball of hot gas that powers life on Earth through nuclear fusion processes.</p>
+
+                    <h3 style="color: green;">2. Sirius A and Sirius B</h3>
+                    <p>Sirius A is the brightest star in the night sky, located in the constellation Canis Major. It is a main-sequence star. Sirius B is a faint white dwarf companion to Sirius A, formed after the star's collapse.</p>
+
+                    <h3 style="color: green;">3. Crab Nebula</h3>
+                    <p>The Crab Nebula is a remnant of a supernova explosion. It is located in the constellation Taurus and is a source of high-energy radiation, including X-rays and gamma rays.</p>
+
+                    <h3 style="color: green;">4. Black Hole</h3>
+                    <p>A black hole is a region of space where gravity is so strong that not even light can escape. Black holes are formed when massive stars collapse under their own gravity, creating a singularity with infinite density.</p>
+
+                    <h3 style="color: green;">5. Vela Pulsar</h3>
+                    <p>The Vela Pulsar is a rotating neutron star emitting regular pulses of electromagnetic radiation. It is the remnant of a supernova explosion and provides insights into the physics of dense objects.</p>
+
+                    <h3 style="color: green;">6. M80 (Globular Cluster)</h3>
+                    <p>M80 is a dense cluster of stars, bound by gravity. It is located in the constellation Scorpius and contains hundreds of thousands of stars.</p>
+
+                    <h3 style="color: green;">7. The Pleiades</h3>
+                    <p>The Pleiades is a bright open star cluster in the constellation Taurus. It is also known as the "Seven Sisters" and is visible to the naked eye.</p>
+
+                    <h3 style="color: green;">8. Whirlpool Galaxy</h3>
+                    <p>The Whirlpool Galaxy (M51) is a spiral galaxy known for its well-defined arms. It is located in the constellation Canes Venatici and is interacting with a smaller galaxy.</p>
+
+                    <h3 style="color: green;">9. Abell 2744 (Galaxy Cluster)</h3>
+                    <p>Abell 2744 is a massive galaxy cluster located 3.5 billion light-years away. It consists of several smaller galaxy clusters that have merged together.</p>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>

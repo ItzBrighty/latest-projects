@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prarabdh Mishra - Educational Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url('https://source.unsplash.com/1600x900/?nature,technology') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .container {
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        h1 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.5em;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-top: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #606060;  /* Gray */
+            color: white;
+        }
+        .header img {
+            width: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin-top: 10px;
+        }
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .menu button {
+            padding: 15px;
+            margin: 10px;
+            font-size: 18px;
+            background-color: #808080;  /* Gray */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .menu button:hover {
+            background-color: #A9A9A9;  /* Lighter gray on hover */
+        }
+        .topic {
+            margin-top: 30px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Profile Section -->
+    <div class="container">
+        <img src="https://i.postimg.cc/wvdM9rvH/bru.webp" alt="Profile Picture" class="profile-img">
+        <h1>Welcome, I'm Prarabdh Mishra</h1>
+        <p>Passionate about technology, innovation, and creativity. Join me on my journey to explore and create something amazing.</p>
+    </div>
+
+    <!-- Header with Educational Introduction -->
+    <div class="header">
+        <h1>Welcome to My Educational Website</h1>
+    </div>
+
+    <!-- About Section -->
+    <div class="content">
+        <h2>About Me</h2>
+        <p>Hello! I am Prarabdh Mishra, and I welcome you to explore this educational website. Here, you will find information on various topics including the human body, computers, space, and more!</p>
+    </div>
+
+    <!-- Menu for Interactive Learning -->
+    <div class="menu">
+        <button onclick="showContent('human-body')">Human Body</button>
+        <button onclick="showContent('computer')">Computer</button>
+        <button onclick="showContent('space')">Space</button>
+    </div>
+
+    <!-- Dynamic Content Section -->
+    <div class="topic" id="content">
+        <h2>Choose a Topic to Learn More</h2>
+    </div>
+
+    <!-- Script for Dynamic Content Switching -->
+    <script>
+        function showContent(topic) {
+            const contentDiv = document.getElementById('content');
+            if (topic === 'human-body') {
+                contentDiv.innerHTML = `
+                    <h2>Understanding the Human Body</h2>
+                    <h3>1. Integumentary System</h3>
+                    <p>Protects the body from external damage and infection; includes the skin, hair, and nails.</p>
+
+                    <h3>2. Skeletal System</h3>
+                    <p>Provides structure to the body, protects organs, and allows movement. Consists of bones and joints.</p>
+
+                    <h3>3. Muscular System</h3>
+                    <p>Enables movement through contraction and relaxation of muscles. Includes skeletal, smooth, and cardiac muscles.</p>
+
+                    <h3>4. Nervous System</h3>
+                    <p>Transmits signals between different parts of the body. Includes the brain, spinal cord, and nerves.</p>
+
+                    <h3>5. Cardiovascular System</h3>
+                    <p>Circulates blood throughout the body, delivering oxygen and nutrients to cells. Includes the heart and blood vessels.</p>
+
+                    <h3>6. Lymphatic System</h3>
+                    <p>Helps defend against infection and maintains fluid balance. Includes lymph nodes, vessels, and lymph.</p>
+
+                    <h3>7. Respiratory System</h3>
+                    <p>Facilitates the exchange of gases (oxygen and carbon dioxide) between the body and the environment. Includes the lungs, trachea, and diaphragm.</p>
+
+                    <h3>8. Digestive System</h3>
+                    <p>Breaks down food to absorb nutrients and eliminate waste. Includes the stomach, intestines, liver, and pancreas.</p>
+
+                    <h3>9. Urinary System</h3>
+                    <p>Filters waste from the blood and maintains fluid balance. Includes the kidneys, bladder, and urethra.</p>
+
+                    <h3>10. Endocrine System</h3>
+                    <p>Regulates body functions through hormones. Includes glands such as the thyroid, pituitary, and adrenal glands.</p>
+
+                    <h3>11. Reproductive System</h3>
+                    <p>Facilitates reproduction. Includes the testes, ovaries, uterus, and other reproductive organs.</p>
+
+                    <h3>Organs:</h3>
+                    <h4>1. Brain</h4><p>Controls thoughts, memory, emotions, and voluntary movements.</p>
+                    <h4>2. Heart</h4><p>Pumps blood through the body, delivering oxygen and nutrients to tissues.</p>
+                    <h4>3. Lungs</h4><p>Facilitate gas exchange (oxygen and carbon dioxide) during breathing.</p>
+                    <h4>4. Kidneys</h4><p>Filter waste from the blood and regulate fluid balance.</p>
+                    <h4>5. Liver</h4><p>Detoxifies chemicals and produces essential proteins for digestion.</p>
+                    <h4>6. Gallbladder</h4><p>Stores bile produced by the liver for digestion.</p>
+                    <h4>7. Pancreas</h4><p>Produces insulin and digestive enzymes.</p>
+                    <h4>8. Stomach</h4><p>Breaks down food with acid and digestive enzymes.</p>
+                    <h4>9. Fingers</h4><p>Allow for fine motor skills and dexterity.</p>
+                    <h4>10. Bones</h4><p>Provide structure, protect organs, and enable movement.</p>
+                    <h4>11. Muscles</h4><p>Facilitate movement by contracting and relaxing.</p>
+                `;
+            } else if (topic === 'computer') {
+                contentDiv.innerHTML = `
+                    <h2>Understanding Computers</h2>
+                    <h3>1. Central Processing Unit (CPU)</h3>
+                    <p>The CPU is the brain of the computer. It performs calculations, executes instructions, and manages data processing.</p>
+
+                    <h3>2. Random Access Memory (RAM)</h3>
+                    <p>RAM temporarily stores data that is being used by the CPU for quick access and processing.</p>
+
+                    <h3>3. Motherboard</h3>
+                    <p>The motherboard connects all the components of the computer, including the CPU, RAM, and storage.</p>
+
+                    <h3>4. Computer Data Storage</h3>
+                    <p>Storage devices like hard drives and SSDs store operating systems, applications, and user data permanently.</p>
+
+                    <h3>5. Graphics Card</h3>
+                    <p>The graphics card processes visual data and outputs it to the monitor for display.</p>
+
+                    <h3>6. Sound Card</h3>
+                    <p>The sound card processes audio input and output, allowing for sound playback and recording.</p>
+
+                    <h3>7. Computer Case</h3>
+                    <p>The case houses and protects the internal components of the computer.</p>
+
+                    <h3>8. Monitor</h3>
+                    <p>The monitor displays visual output from the computer.</p>
+
+                    <h3>9. Mouse</h3>
+                    <p>The mouse is an input device that allows users to interact with the graphical interface of the computer.</p>
+
+                    <h3>10. Keyboard</h3>
+                    <p>The keyboard is an input device used for typing and inputting commands.</p>
+
+                    <h3>11. Speakers</h3>
+                    <p>Speakers output audio data from the computer to the user.</p>
+                `;
+            } else if (topic === 'space') {
+                contentDiv.innerHTML = `
+                    <h2>Exploring Space</h2>
+                    <h3>1. The Sun</h3>
+                    <p>The Sun is the star at the center of our solar system, providing light and heat necessary for life on Earth.</p>
+
+                    <h3>2. Sirius A with Sirius B</h3>
+                    <p>Sirius A is a binary star system; Sirius B is a white dwarf, the remnant of a star that has exhausted its nuclear fuel.</p>
+
+                    <h3>3. The Crab Nebula</h3>
+                    <p>A supernova remnant and pulsar wind nebula formed from the explosion of a massive star.</p>
+
+                    <h3>4. A Black Hole</h3>
+                    <p>A region of spacetime where gravity is so strong that nothing, not even light, can escape.</p>
+
+                    <h3>5. Vela Pulsar</h3>
+                    <p>A rapidly rotating neutron star that emits beams of radiation, known as a pulsar.</p>
+
+                    <h3>6. M80</h3>
+                    <p>M80 is a globular cluster, a tight group of stars bound by gravity.</p>
+
+                    <h3>7. The Pleiades</h3>
+                    <p>The Pleiades is an open star cluster visible to the naked eye, containing young, hot stars.</p>
+
+                    <h3>8. The Whirlpool Galaxy</h3>
+                    <p>A spiral galaxy known for its distinctive appearance due to the interaction with a nearby galaxy.</p>
+
+                    <h3>9. Abell 2744</h3>
+                    <p>A massive galaxy cluster containing hundreds of galaxies and strong gravitational lensing.</p>
+                `;
+            }
+        }
+    </script>
+
+</body>
+</html>

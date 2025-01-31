@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prarabdh Mishra - Explore Human Body, Computers, and Space</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        h1 {
+            color: purple;
+        }
+        .content {
+            padding: 20px;
+        }
+        .fact {
+            color: neon red;
+        }
+        .green {
+            color: green;
+        }
+        .purple {
+            color: purple;
+        }
+        #topics {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+        .topic-button {
+            background-color: purple;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            font-size: 1.2em;
+        }
+        .topic-button:hover {
+            background-color: darkviolet;
+        }
+        .container {
+            padding: 100px 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Profile Section -->
+    <div class="container">
+        <img src="https://i.postimg.cc/wvdM9rvH/bru.webp" alt="Profile Picture" class="profile-img">
+        <h1>Welcome, I'm Prarabdh Mishra</h1>
+        <p>Passionate about technology, innovation, and creativity. Join me on my journey to explore and create something amazing.</p>
+    </div>
+
+    <!-- Topic Selection Section -->
+    <div id="topics">
+        <button class="topic-button" onclick="loadContent('humanBody')">Human Body</button>
+        <button class="topic-button" onclick="loadContent('computer')">Computer</button>
+        <button class="topic-button" onclick="loadContent('space')">Space</button>
+    </div>
+
+    <!-- Content Display Section -->
+    <div class="content" id="content"></div>
+
+    <script>
+        function loadContent(topic) {
+            const contentDiv = document.getElementById("content");
+
+            if (topic === 'humanBody') {
+                contentDiv.innerHTML = `
+                    <h2 class="purple">Human Body</h2>
+                    <h3 class="green">1. Integumentary System</h3>
+                    <p>The integumentary system includes the skin, hair, nails, and glands. It protects the body from external damage, regulates body temperature, and allows for sensory perception.</p>
+                    <p><span class="fact">Fact 1:</span> The skin is the largest organ in the body.</p>
+                    <p><span class="fact">Fact 2:</span> Hair helps with temperature regulation and protects the scalp from UV rays.</p>
+
+                    <h3 class="green">2. Skeletal System</h3>
+                    <p>The skeletal system is made up of bones, cartilage, and ligaments. It supports the body, protects vital organs, and enables movement. It also stores calcium and produces blood cells in the bone marrow.</p>
+                    <p><span class="fact">Fact 1:</span> The human skeleton is made up of 206 bones.</p>
+                    <p><span class="fact">Fact 2:</span> Bones are constantly being remodeled and replaced throughout a person’s life.</p>
+
+                    <h3 class="green">3. Muscular System</h3>
+                    <p>The muscular system consists of skeletal muscles, smooth muscles, and cardiac muscles. It enables movement, helps with posture, and produces heat for the body.</p>
+                    <p><span class="fact">Fact 1:</span> Skeletal muscles are attached to bones and help in voluntary movements.</p>
+                    <p><span class="fact">Fact 2:</span> Cardiac muscles are specialized muscles found in the heart and enable its rhythmic contraction.</p>
+
+                    <h3 class="green">4. Nervous System</h3>
+                    <p>The nervous system controls body functions and allows communication between the brain and other body parts. It includes the brain, spinal cord, and nerves.</p>
+                    <p><span class="fact">Fact 1:</span> The brain contains approximately 86 billion neurons.</p>
+                    <p><span class="fact">Fact 2:</span> Nerves transmit electrical impulses that help regulate all functions in the body.</p>
+
+                    <h3 class="green">5. Cardiovascular System</h3>
+                    <p>The cardiovascular system is composed of the heart and blood vessels. It transports oxygen, nutrients, and hormones throughout the body and helps remove waste products.</p>
+                    <p><span class="fact">Fact 1:</span> The heart beats around 100,000 times per day, pumping approximately 7,570 liters of blood.</p>
+                    <p><span class="fact">Fact 2:</span> Blood travels through arteries, veins, and capillaries to transport oxygen and nutrients to cells.</p>
+
+                    <h3 class="green">6. Lymphatic System</h3>
+                    <p>The lymphatic system helps protect and maintain the fluid environment of the body. It includes the lymph nodes, spleen, and tonsils, which help fight infections and drain lymph fluid.</p>
+                    <p><span class="fact">Fact 1:</span> The lymphatic system plays a vital role in the immune system by filtering harmful substances.</p>
+                    <p><span class="fact">Fact 2:</span> Lymph nodes act as filters, trapping bacteria and viruses.</p>
+
+                    <h3 class="green">7. Respiratory System</h3>
+                    <p>The respiratory system allows for the exchange of gases, including oxygen and carbon dioxide, between the body and the environment. It includes the lungs, trachea, and diaphragm.</p>
+                    <p><span class="fact">Fact 1:</span> Humans breathe about 16-20 times per minute on average.</p>
+                    <p><span class="fact">Fact 2:</span> Oxygen is carried in the blood by red blood cells, which deliver it to tissues throughout the body.</p>
+
+                    <h3 class="green">8. Digestive System</h3>
+                    <p>The digestive system breaks down food into nutrients that the body can absorb. It includes the mouth, esophagus, stomach, and intestines.</p>
+                    <p><span class="fact">Fact 1:</span> The stomach secretes acid and enzymes to help break down food.</p>
+                    <p><span class="fact">Fact 2:</span> Nutrients from digested food are absorbed into the bloodstream in the small intestine.</p>
+
+                    <h3 class="green">9. Urinary System</h3>
+                    <p>The urinary system includes the kidneys, ureters, bladder, and urethra. It removes waste products from the blood and regulates fluid and electrolyte balance.</p>
+                    <p><span class="fact">Fact 1:</span> The kidneys filter about 50 gallons of blood every day to produce urine.</p>
+                    <p><span class="fact">Fact 2:</span> Urine is stored in the bladder until it is expelled through the urethra.</p>
+
+                    <h3 class="green">10. Endocrine System</h3>
+                    <p>The endocrine system regulates various functions through hormones produced by glands. These hormones control metabolism, growth, mood, and reproductive functions. Major glands include the thyroid, adrenal glands, and pancreas.</p>
+                    <p><span class="fact">Fact 1:</span> The thyroid gland produces hormones that regulate metabolism and energy use in the body.</p>
+                    <p><span class="fact">Fact 2:</span> The pancreas produces insulin and glucagon, which help regulate blood sugar levels.</p>
+
+                    <h3 class="green">11. Reproductive System</h3>
+                    <p>The reproductive system enables reproduction, ensuring the continuation of the species. It includes organs like the ovaries, testes, uterus, and prostate. In females, the reproductive system supports pregnancy, while in males, it produces sperm.</p>
+                    <p><span class="fact">Fact 1:</span> The ovaries release eggs and produce hormones like estrogen and progesterone.</p>
+                    <p><span class="fact">Fact 2:</span> Sperm produced by the testes is essential for fertilizing an egg during reproduction.</p>
+
+                    <h3 class="green">Key Organs and Their Functions</h3>
+                    <ul>
+                        <li><span class="fact">Brain:</span> Controls thoughts, memory, emotion, touch, motor skills, vision, breathing, and every process that regulates our body.</li>
+                        <li><span class="fact">Heart:</span> Pumps blood throughout the body, supplying oxygen and nutrients while removing carbon dioxide and other wastes.</li>
+                        <li><span class="fact">Lungs:</span> Facilitate the exchange of oxygen and carbon dioxide during breathing.</li>
+                        <li><span class="fact">Kidneys:</span> Filter waste from the blood and help maintain fluid and electrolyte balance.</li>
+                        <li><span class="fact">Liver:</span> Detoxifies chemicals and produces proteins important for metabolism.</li>
+                        <li><span class="fact">Gallbladder:</span> Stores bile produced by the liver, aiding in the digestion of fats.</li>
+                        <li><span class="fact">Pancreas:</span> Produces insulin, an important hormone for regulating blood sugar levels.</li>
+                        <li><span class="fact">Stomach:</span> Breaks down food and absorbs nutrients for digestion.</li>
+                        <li><span class="fact">Fingers:</span> Help us grasp objects and perform intricate tasks.</li>
+                        <li><span class="fact">Bones:</span> Provide structure to the body, protect organs, and store calcium.</li>
+                        <li><span class="fact">Muscles:</span> Facilitate movement, maintain posture, and generate heat.</li>
+                    </ul>
+                `;
+            }
+
+            // Computer Section
+            if (topic === 'computer') {
+                contentDiv.innerHTML = `
+                    <h2 class="purple">Computer</h2>
+                    <h3 class="green">1. Central Processing Unit (CPU)</h3>
+                    <p>The CPU is the brain of the computer, responsible for executing instructions and performing calculations necessary for the computer to function.</p>
+                    <p><span class="fact">Fact 1:</span> The CPU processes millions of instructions per second.</p>
+                    <p><span class="fact">Fact 2:</span> The performance of a CPU is measured in GHz (gigahertz), which indicates the number of cycles per second it can perform.</p>
+
+                    <h3 class="green">2. Random Access Memory (RAM)</h3>
+                    <p>RAM is temporary storage that holds data and instructions that the CPU needs while performing tasks.</p>
+                    <p><span class="fact">Fact 1:</span> RAM is volatile memory, meaning it loses its data when the computer is powered off.</p>
+                    <p><span class="fact">Fact 2:</span> More RAM allows a computer to run multiple applications simultaneously without slowing down.</p>
+
+                    <h3 class="green">3. Motherboard</h3>
+                    <p>The motherboard connects all of the computer's components, allowing them to communicate with each other.</p>
+                    <p><span class="fact">Fact 1:</span> The motherboard contains the CPU socket, RAM slots, and expansion ports.</p>
+                    <p><span class="fact">Fact 2:</span> It also houses the chipset, which controls the data flow between the CPU and other components.</p>
+
+                    <h3 class="green">4. Graphics Card</h3>
+                    <p>The graphics card is responsible for rendering images and videos to be displayed on the monitor.</p>
+                    <p><span class="fact">Fact 1:</span> Graphics cards are essential for high-end gaming and video editing.</p>
+                    <p><span class="fact">Fact 2:</span> Some modern graphics cards are also used for machine learning tasks, thanks to their parallel processing capabilities.</p>
+
+                    <h3 class="green">5. Sound Card</h3>
+                    <p>The sound card processes audio signals, allowing a computer to produce sound through speakers or headphones.</p>
+                    <p><span class="fact">Fact 1:</span> Some sound cards also provide advanced features like surround sound and noise cancellation.</p>
+                    <p><span class="fact">Fact 2:</span> Modern computers often integrate sound cards into the motherboard.</p>
+
+                    <h3 class="green">6. Computer Case</h3>
+                    <p>The computer case houses all internal components, protecting them from damage and providing airflow for cooling.</p>
+                    <p><span class="fact">Fact 1:</span> The case size affects the number of components that can be installed.</p>
+                    <p><span class="fact">Fact 2:</span> Proper cooling and ventilation within the case are essential for maintaining optimal performance.</p>
+
+                    <h3 class="green">7. Computer Peripherals</h3>
+                    <p>Peripherals include devices like the monitor, mouse, keyboard, and speakers, which allow the user to interact with the computer.</p>
+                    <p><span class="fact">Fact 1:</span> The monitor displays visual output from the computer.</p>
+                    <p><span class="fact">Fact 2:</span> The mouse and keyboard are input devices, enabling the user to interact with the system.</p>
+                `;
+            }
+
+            // Space Section
+            if (topic === 'space') {
+                contentDiv.innerHTML = `
+                    <h2 class="purple">Space</h2>
+                    <h3 class="green">1. The Sun</h3>
+                    <p>The Sun is a star at the center of our solar system, providing light, warmth, and energy necessary for life on Earth.</p>
+                    <p><span class="fact">Fact 1:</span> The Sun's energy comes from nuclear fusion reactions in its core.</p>
+                    <p><span class="fact">Fact 2:</span> It makes up 99.86% of the total mass in the solar system.</p>
+
+                    <h3 class="green">2. Sirius A with Sirius B</h3>
+                    <p>Sirius A is the brightest star in the night sky, while Sirius B is its faint white dwarf companion. Together they form a binary star system.</p>
+                    <p><span class="fact">Fact 1:</span> Sirius A is about twice as massive as the Sun.</p>
+                    <p><span class="fact">Fact 2:</span> Sirius B was once a massive star, but it has now shrunk into a dense white dwarf.</p>
+
+                    <h3 class="green">3. Crab Nebula</h3>
+                    <p>The Crab Nebula is a supernova remnant resulting from a star's explosion. It contains a pulsar at its center, emitting powerful radiation.</p>
+                    <p><span class="fact">Fact 1:</span> The Crab Nebula is about 6,500 light-years away from Earth.</p>
+                    <p><span class="fact">Fact 2:</span> The pulsar at its center rotates at a rate of 30 times per second.</p>
+
+                    <h3 class="green">4. Black Hole</h3>
+                    <p>A black hole is a region in space where gravity is so strong that not even light can escape from it.</p>
+                    <p><span class="fact">Fact 1:</span> Black holes are formed when massive stars collapse under their own gravity.</p>
+                    <p><span class="fact">Fact 2:</span> The boundary around a black hole is called the event horizon.</p>
+
+                    <h3 class="green">5. Vela Pulsar</h3>
+                    <p>The Vela Pulsar is a neutron star that emits beams of radiation, which we detect as pulses of energy.</p>
+                    <p><span class="fact">Fact 1:</span> It is located about 1,000 light-years away from Earth.</p>
+                    <p><span class="fact">Fact 2:</span> The Vela Pulsar spins 11 times per second.</p>
+
+                    <h3 class="green">6. M80 Globular Cluster</h3>
+                    <p>M80 is a globular cluster located in the Milky Way. It contains a dense collection of stars.</p>
+                    <p><span class="fact">Fact 1:</span> M80 is about 28,000 light-years away from Earth.</p>
+                    <p><span class="fact">Fact 2:</span> It has an estimated 100,000 stars in its core.</p>
+
+                    <h3 class="green">7. The Pleiades</h3>
+                    <p>The Pleiades is an open star cluster known as the Seven Sisters. It contains young, hot stars.</p>
+                    <p><span class="fact">Fact 1:</span> The Pleiades is located about 440 light-years away from Earth.</p>
+                    <p><span class="fact">Fact 2:</span> The cluster is visible to the naked eye and contains at least 1,000 stars.</p>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
